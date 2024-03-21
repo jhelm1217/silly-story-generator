@@ -15,9 +15,9 @@ const insertX = [
 ];
 
 const insertY = [
-'the Big Four Bridge'
-'St Louis Arch'
-'Empire state building'
+'The Big Four Bridge'
+'The St Louis Arch'
+'The Empire state building'
 };
 
 const insertZ = [
@@ -34,24 +34,23 @@ randomize.addEventListener('click', result);
 
 
 function result() {
-  let newStory = storyText;
-  let xItem = randomValueFromArray(insertX);
-  let yItem = randomValueFromArray(insertY);
-  let zItem = randomValueFromArray(insertZ);
+  xItem = randomValueFromArray(insertX);
+  yItem = randomValueFromArray(insertY);
+  zItem = randomValueFromArray(insertZ); newStory = storyText;
+  newStory = newStory.replaceAll(":insertx:, xItem);
+  newStory = newStory.replace(":inserty:",yItem);
+  newStory = newStory.replace(":insertz:", zItem);
 
-  newStory = newStory.replaceAll(":insertx:", xItem).replaceAll(":inserty:", yItem).replaceAll(":insertz:", zItem)
-
+  
   if(customName.value !== '') {
     const name = customName.value;
     newStory = newStory.replaceAll("Bob", name)
   }
-
   if(document.getElementById("uk").checked) {
-    let weight = Math.round(300 / 14);
-    weight += " stone";
-    let temperature =  Math.round((94 - 32) * (5/9));
-    temperature += " centigrade";
-    newStory = newStory.replaceAll("94 fahrenheit", temperature).replaceAll("300 pounds", weight);
+    const weight = Math.round(300/14) = ' stone';
+    const temperature =  Math.round((94 - 32) * (5/9)) = 'centigrade'
+    newStory = newStory.replace("94 fahrenheit", tempperature)
+    newStory = newStory.replace("300 pounds", weight)
   }
 
 
