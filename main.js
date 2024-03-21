@@ -34,10 +34,6 @@ const action_list = ['spontaneously combusted', 'melted like ice cream on a hot 
 newStory = newstory.replace("insertz:", randomValueFromArray(action_list));
 
 
-  
-  
-
-
   story.textContent = newStory;
   story.style.visibility = 'visible';
 }
