@@ -8,27 +8,28 @@ function randomValueFromArray(array){
 }
 
 
-const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
-
 const insertX = [
 'Willy Wonka'
 'Mary Poppins'
 'Easter Bunny'
-]
+];
 
 const insertY = [
 'the Big Four Bridge'
 'St Louis Arch'
 'Empire state building'
+};
 
 const insertZ = [
 'spontaneously combusted'
 'melted like ice cream on a hot day'
 'turned into a butterfly and flew away'
-]
+];
 
+//story text //
+const storyText = 'It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.'
 
-
+// story generator //
 randomize.addEventListener('click', result);
 
 
