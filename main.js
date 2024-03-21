@@ -1,6 +1,6 @@
 const customName = document.getElementById('customname');
 const randomize = document.querySelector('.randomize');
-const newStory = document.querySelector('.story');
+const Story = document.querySelector('.story');
 
 function randomValueFromArray(array){
   const random = Math.floor(Math.random() * array.length);
@@ -23,7 +23,7 @@ function result() {
   if(document.getElementById("uk").checked) {
     const weight = Math.round(300/14) = ' stone';
     const temperature =  Math.round((94 - 32) * (5/9)) = 'centigrade';
-    newStory = newStory.replace("94 fahrenheit", tempperature);
+    newStory = newStory.replace("94 fahrenheit", tempperature)
     newStory = newStory.replace("300 pounds", weight)
   }
 
